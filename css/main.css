@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Open Sans','helvetica',arial,sans-serif;
   font-weight: 300;
@@ -68,6 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 .info-section {
   background-color: #fff;
   padding: 1px 50px;
+  overflow: hidden;
 }
 
 .info-section h2:after {
@@ -78,11 +87,6 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 3px solid black;
 }
 
-ul.whatido__skill-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
 .clearfix:after {
   content:"";
@@ -91,6 +95,7 @@ ul.whatido__skill-list {
 }
 
 ul.whatido__skill-list li {
+  text-align: center;
   padding-top: 100px;
   float: left;
   width: 33.3%;
@@ -114,9 +119,6 @@ ul.whatido__skill-list li {
   background-position: center top;
 }
 
-.info-section {
-  text-align: center;
-}
 .info-section header h2 {
   font-size: 28px;
   text-transform: uppercase;
@@ -125,8 +127,43 @@ ul.whatido__skill-list li {
 
 .info-section header {
   margin-bottom: 60px;
+  text-align: center;
 }
 
 .info-section__description {
   font-style: italic;
+}
+
+.info-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.education-experience__list li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.education-experience__list img {
+  display: block;
+  margin-right: 30px;
+  width: 180px;
+  float: left;
+  clear: both;
+}
+
+.education-experience__list article {
+  overflow: hidden;
+}
+
+.photos__list li {
+  float: left;
+  width: 25%;
+}
+
+.photos__list img {
+  padding: 10px;
+  width: 100%;
 }
